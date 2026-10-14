@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>영어 암기 연습</title>
+  <link rel="stylesheet" href="english.css">
+  <script defer src="english.js"></script>
+</head>
+<body>
+  <header><a class="brand" href="index.html">ENGLISH <span>암기 노트</span></a></header>
+  <main>
+    <div class="intro"><small>READ · RECALL · WRITE</small><h1>한 문장씩 익히는<br><span>영어 암기 연습</span></h1><p>질문은 보면서, 답변은 기억하면서 연습하세요.</p></div>
+    <div class="layout">
+      <aside><h2>학습할 글</h2><div id="books"></div><p id="progress"></p><progress id="bar" max="11" value="0"></progress><nav id="parts" aria-label="문항 선택"></nav><small id="storage">진도와 답안은 이 브라우저에 저장돼요.</small><button id="reset" class="danger">저장된 연습 초기화</button></aside>
+      <section><div class="heading"><h2 id="title"></h2><span id="count"></span></div><div id="modes" aria-label="연습 방식"></div>
+        <article><div id="prompt" class="prompt" lang="en"></div><div class="options"><label><input id="hint-toggle" type="checkbox"> 첫 글자 힌트</label><label><input id="translation-toggle" type="checkbox"> 해석 보여주기</label></div><div id="translation" class="translation" hidden></div><p id="instruction"></p><div id="content"></div><div id="feedback" role="status" aria-live="polite"></div></article>
+        <div class="navigation"><button id="prev">← 이전</button><label><input id="done" type="checkbox"> 이 답변을 외웠어요</label><button id="next">다음 →</button></div>
+        <p class="tip">질문과 제시 단어는 항상 표시돼요. 채점은 대소문자·공백·문장부호를 제외하고 비교해요.</p>
+      </section>
+    </div>
+  </main>
+  <footer>영어 수행평가 암기 노트</footer>
+</body>
+</html>
